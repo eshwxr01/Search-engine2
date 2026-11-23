@@ -1,0 +1,16 @@
+# Core
+streamlit>=1.30
+requests>=2.31
+beautifulsoup4>=4.12
+networkx>=3.0
+pyvis>=0.3.2
+Pillow>=10.0
+ImageHash>=4.3
+python-whois>=0.9
+ddgs>=9.0
+playwright>=1.40
+
+# Face detection for the subject/background slices.
+# Pinned below 5: OpenCV 5.x wheels no longer bundle the Haar cascade file the engine uses.
+# (Optional: without it the engine falls back to a fixed-region crop and says so in the report.)
+opencv-python-headless>=4.8,<5
